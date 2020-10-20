@@ -1,0 +1,10 @@
+<label>Student Name</label>
+<%= text_field_tag :name, @student.name %>
+
+<label>Student Hometown</label>
+<%= text_field_tag :hometown, @student.hometown.capitalize %>
+
+<label>Student Birthday</label>
+<%= date_field_tag :birthday, @student.birthday.strftime("%m/%d/%Y") %>
+
+<%= submit_tag "Submit Student" %>
